@@ -1,12 +1,17 @@
+body{
+    justify-content: center;
+}
+
 #board{
     display: grid;
-    background-color: aquamarine;
-    height: 400px;
-    width: 350px;
+    background-color: rgb(45, 47, 46);
+    height: 350px;
+    width: 360px;
     grid-template-columns: repeat(3, 1fr);
 }
 .row{
     display: grid;
+    padding: 10px;
     
 }
 .cell{
