@@ -1,0 +1,19 @@
+#board{
+    display: grid;
+    background-color: aquamarine;
+    height: 400px;
+    width: 350px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.row{
+    display: grid;
+    
+}
+.cell{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    
+}
