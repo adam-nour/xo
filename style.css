@@ -1,13 +1,18 @@
 body{
+    display: flex;
     justify-content: center;
+    height: 100vh;
+    padding-top: 100px;
 }
 
 #board{
     display: grid;
     background-color: rgb(45, 47, 46);
-    height: 350px;
+    height: 360px;
     width: 360px;
     grid-template-columns: repeat(3, 1fr);
+    
+    
 }
 .row{
     display: grid;
@@ -21,4 +26,12 @@ body{
     width: 100px;
     text-align: center;
     
+}
+
+button{
+    background-color: white;
+    border: none;
+}
+h1{
+    color: brown;
 }
