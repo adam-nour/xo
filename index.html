@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="display-result"></div>
     <div id="board">
         
         <div class="row">
-            <div id='button-0' class="cell"><button onclick="playerSelection(0)"></button></div>
-            <div id='button-3'class="cell"><button onclick="playerSelection(3)"></button></div>
-            <div id='button-6'class="cell"><button onclick="playerSelection(6)"></button></div>
+            <div  class="cell"><button id='button-0'class="cell2" onclick="playerSelection(0)"></button></div>
+            <div class="cell"><button id='button-3'class="cell2" onclick="playerSelection(3)"></button></div>
+            <div class="cell"><button id='button-6' class="cell2" onclick="playerSelection(6)"></button></div>
         </div>
         <div class="row">
-            <div id='button-1'class="cell"><button onclick="playerSelection(1)"></button></div>
-            <div id='button-4'class="cell"><button onclick="playerSelection(4)"></button></div>
-            <div id='button-7'class="cell"><button onclick="playerSelection(7)"></button></div>
+            <div class="cell"><button id='button-1' class="cell2" onclick="playerSelection(1)"></button></div>
+            <div class="cell"><button id='button-4'class="cell2" onclick="playerSelection(4)"></button></div>
+            <div class="cell"><button id='button-7'class="cell2" onclick="playerSelection(7)"></button></div>
         </div>
         <div class="row">
-            <div id='button-2'class="cell"><button onclick="playerSelection(2)"></button></div>
-            <div id='button-5'class="cell"><button onclick="playerSelection(5)"></button></div>
-            <div id='button-8'class="cell"><button onclick="playerSelection(8)"></button></div>
+            <div class="cell"><button id='button-2'class="cell2" onclick="playerSelection(2)"></button></div>
+            <div class="cell"><button id='button-5'class="cell2" onclick="playerSelection(5)"></button></div>
+            <div class="cell"><button id='button-8'class="cell2" onclick="playerSelection(8)"></button></div>
         </div>    
-        
+       
     </div>
     
-
+ <div class="playerchoice">
+            <button onclick="changePlayer()">Start as O</button>
+            <button onclick="removeAll()">Reset</button>
+        </div>
 
     <script src="script.js"></script>
 </body>

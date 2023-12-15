@@ -5,6 +5,10 @@ let gameBoard = [
 ];
 let turnControl = 0;
 
+
+function changePlayer() {
+  turnControl++;
+}
 function playerSelection(index) {
   let row = Math.floor(index / 3);
   let col = index % 3;
@@ -24,13 +28,20 @@ function playerSelection(index) {
 
     // Check for a winner or a draw after each move
     if (checkWinner('X')) {
+      const result = document.querySelector('.display-result');
+      result.innerHTML = '<h1>Player X wins!</h1>';
       console.log('Player X wins!');
     } else if (checkWinner('O')) {
+      const result = document.querySelector('.display-result');
+      result.innerHTML = '<h1>Player O wins!</h1>';
       console.log('Player O wins!');
     } else if (isDraw()) {
+      const result = document.querySelector('.display-result');
+      result.innerHTML = '<h1>It\'s a draw!</h1>';
       console.log('It\'s a draw!');
     }
   } else {
+  
     alert('This cell is already selected. Please choose another.');
   }
 }
@@ -73,3 +84,17 @@ function isDraw() {
   return !checkWinner('X') && !checkWinner('O');
 }
 
+function removeAll() {
+  const result = document.querySelector('.display-result');
+  result.innerHTML = '';
+  const button =document.querySelectorAll('.cell2').forEach(button => {
+    button.innerHTML = '';
+    
+  });
+  gameBoard = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', '']
+  ];
+  turnControl = 0;
+}
